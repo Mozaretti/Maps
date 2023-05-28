@@ -7,6 +7,7 @@ public class Main {
         task1();
         task2();
         task3();
+
     }
     public static void task1(){
         System.out.println(" Задание 1 ");
@@ -38,6 +39,11 @@ public class Main {
 
     public static void task3() {
         System.out.println(" Задание 3 ");
-
+        List<String> strings = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
+        Set<String> wordSet = new HashSet<>(strings);
+        for (String s : wordSet) {
+            System.out.print(s + " ");
+        }
+        System.out.println();
     }
 }
