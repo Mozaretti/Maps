@@ -7,6 +7,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
 
     }
     public static void task1(){
@@ -45,5 +46,20 @@ public class Main {
             System.out.print(s + " ");
         }
         System.out.println();
+    }
+
+    public static void task4() {
+        System.out.println(" Задание 4 ");
+        List<String> strings = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
+        Map<String, Integer> map = new HashMap<>();
+        for (String string : strings) {
+            if (map.containsKey(string)) {
+                map.put(string, map.get(string) + 1);
+            }
+            else {
+                map.put(string, 0);
+            }
+        }
+        System.out.println(map);
     }
 }
